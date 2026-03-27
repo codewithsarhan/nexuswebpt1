@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Build Your Future With Modern Web Design - Futuristic web solutions, AI tools, and premium development.">
+  <title>Nexus | Futuristic Web & AI Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Loading Spinner -->
+  <div class="loader" id="loader">
+    <div class="loader-spinner"></div>
+    <span class="loader-text">Loading...</span>
+  </div>
+
+  <!-- Notification Toast -->
+  <div class="notification" id="notification">
+    <span class="notification-icon">✓</span>
+    <span class="notification-text">Message sent successfully!</span>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="#home" class="nav-logo">
+      <span class="logo-text">Nexus</span>
+      <span class="logo-dot"></span>
+    </a>
+    <ul class="nav-menu">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#services" class="nav-link">Services</a></li>
+      <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+      <li><a href="#features" class="nav-link">Features</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="theme-icon sun">☀</span>
+        <span class="theme-icon moon">☽</span>
+      </button>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-gradient"></div>
+      <div class="particles" id="particles"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-badge" data-aos="fade-down">Next-Gen Web Solutions</p>
+      <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+        Build Your Future With<br>
+        <span class="hero-title-accent">Modern Web Design</span>
+      </h1>
+      <p class="hero-desc" data-aos="fade-up" data-aos-delay="200">
+        We craft premium, futuristic digital experiences with cutting-edge design and AI-powered tools. Transform your vision into reality.
+      </p>
+      <div class="hero-cta" data-aos="fade-up" data-aos-delay="300">
+        <a href="#contact" class="btn btn-primary">Get Started</a>
+        <a href="#portfolio" class="btn btn-outline">View Portfolio</a>
+      </div>
+    </div>
+    <div class="hero-visual" data-aos="fade-left" data-aos-delay="400">
+      <div class="hero-illustration">
+        <div class="hero-card glass">
+          <div class="hero-card-glow"></div>
+          <div class="hero-card-content">
+            <span class="hero-card-label">AI Powered</span>
+            <h3>Smart Development</h3>
+            <p>Automated workflows & intelligent design</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">About Us</span>
+        <h2 class="section-title">We Shape Digital Futures</h2>
+        <p class="section-desc">Our team combines design excellence with technical innovation to deliver experiences that stand out.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-card glass" data-aos="fade-right">
+          <div class="about-card-icon">◆</div>
+          <h3>Vision</h3>
+          <p>Leading the next wave of web experiences with clarity and purpose.</p>
+        </div>
+        <div class="about-card glass" data-aos="fade-up">
+          <div class="about-card-icon">◇</div>
+          <h3>Mission</h3>
+          <p>Empowering brands with futuristic, accessible, and performant solutions.</p>
+        </div>
+        <div class="about-card glass" data-aos="fade-left">
+          <div class="about-card-icon">◈</div>
+          <h3>Values</h3>
+          <p>Innovation, quality, and user-centric design at every step.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section services" id="services">
+    <div class="parallax-bg" data-parallax="0.3"></div>
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">Services</span>
+        <h2 class="section-title">What We Offer</h2>
+        <p class="section-desc">Premium services tailored for modern businesses and startups.</p>
+      </div>
+      <div class="services-grid">
+        <article class="service-card glass" data-aos="fade-up" data-aos-delay="0">
+          <div class="service-icon">◉</div>
+          <h3>Web Design</h3>
+          <p>Stunning, responsive layouts with modern UI/UX principles and futuristic aesthetics.</p>
+        </article>
+        <article class="service-card glass" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-icon">◎</div>
+          <h3>UI/UX Design</h3>
+          <p>User-centered interfaces that are intuitive, accessible, and visually compelling.</p>
+        </article>
+        <article class="service-card glass" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-icon">⬡</div>
+          <h3>Frontend Development</h3>
+          <p>Fast, scalable frontends built with the latest frameworks and best practices.</p>
+        </article>
+        <article class="service-card glass" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-icon">✦</div>
+          <h3>AI Tools</h3>
+          <p>Integration of AI features: chatbots, search, and intelligent automation.</p>
+        </article>
+        <article class="service-card glass" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-icon">⬢</div>
+          <h3>Website Optimization</h3>
+          <p>Performance, SEO, and conversion optimization for maximum impact.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="section portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">Portfolio</span>
+        <h2 class="section-title">Selected Projects</h2>
+        <p class="section-desc">A showcase of our latest work and client success stories.</p>
+      </div>
+      <div class="portfolio-grid">
+        <article class="portfolio-card glass" data-aos="fade-up" data-aos-delay="0">
+          <div class="portfolio-image-wrap">
+            <div class="portfolio-image" style="background: linear-gradient(135deg, var(--accent), var(--primary));"></div>
+          </div>
+          <div class="portfolio-content">
+            <h3>FinTech Dashboard</h3>
+            <p>Real-time analytics and clean data visualization for financial platforms.</p>
+            <div class="portfolio-links">
+              <a href="#" class="btn btn-small">Live Demo</a>
+              <a href="#" class="btn btn-ghost">GitHub</a>
+            </div>
+          </div>
+        </article>
+        <article class="portfolio-card glass" data-aos="fade-up" data-aos-delay="100">
+          <div class="portfolio-image-wrap">
+            <div class="portfolio-image" style="background: linear-gradient(135deg, var(--secondary), var(--accent));"></div>
+          </div>
+          <div class="portfolio-content">
+            <h3>AI Assistant App</h3>
+            <p>Conversational AI interface with natural language understanding.</p>
+            <div class="portfolio-links">
+              <a href="#" class="btn btn-small">Live Demo</a>
+              <a href="#" class="btn btn-ghost">GitHub</a>
+            </div>
+          </div>
+        </article>
+        <article class="portfolio-card glass" data-aos="fade-up" data-aos-delay="200">
+          <div class="portfolio-image-wrap">
+            <div class="portfolio-image" style="background: linear-gradient(135deg, var(--primary), var(--secondary));"></div>
+          </div>
+          <div class="portfolio-content">
+            <h3>E-Commerce Platform</h3>
+            <p>High-performance online store with modern checkout and recommendations.</p>
+            <div class="portfolio-links">
+              <a href="#" class="btn btn-small">Live Demo</a>
+              <a href="#" class="btn btn-ghost">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features / AI Section -->
+  <section class="section features" id="features">
+    <div class="parallax-bg" data-parallax="0.2"></div>
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">Features</span>
+        <h2 class="section-title">AI-Powered Tools</h2>
+        <p class="section-desc">Explore our demo interfaces for AI Chatbot, Translator, and Smart Search.</p>
+      </div>
+      <div class="features-tabs">
+        <button class="feature-tab active" data-tab="chatbot">AI Chatbot</button>
+        <button class="feature-tab" data-tab="translator">AI Translator</button>
+        <button class="feature-tab" data-tab="search">AI Search</button>
+      </div>
+      <div class="feature-panels">
+        <div class="feature-panel glass active" data-panel="chatbot">
+          <div class="ai-chatbot-ui">
+            <div class="chat-header">
+              <span class="chat-dot"></span>
+              <span>AI Assistant</span>
+            </div>
+            <div class="chat-messages">
+              <div class="chat-msg bot">Hello! How can I help you today?</div>
+              <div class="chat-msg user">Tell me about your services.</div>
+              <div class="chat-msg bot">We offer Web Design, UI/UX, Frontend Dev, AI Tools & Optimization. Ask for details!</div>
+            </div>
+            <div class="chat-input-wrap">
+              <input type="text" class="chat-input" placeholder="Type your message..." id="chatInput">
+              <button class="chat-send btn btn-primary">Send</button>
+            </div>
+          </div>
+        </div>
+        <div class="feature-panel glass" data-panel="translator">
+          <div class="ai-translator-ui">
+            <div class="translator-row">
+              <label>From</label>
+              <select class="translator-select">
+                <option>English</option>
+                <option>Spanish</option>
+                <option>French</option>
+                <option>German</option>
+              </select>
+            </div>
+            <textarea class="translator-textarea" placeholder="Enter text to translate..." rows="4"></textarea>
+            <button class="btn btn-primary translator-btn">Translate</button>
+            <div class="translator-result">
+              <label>Result</label>
+              <div class="translator-output">Translation will appear here...</div>
+            </div>
+          </div>
+        </div>
+        <div class="feature-panel glass" data-panel="search">
+          <div class="ai-search-ui">
+            <div class="search-bar-wrap">
+              <span class="search-icon">⌕</span>
+              <input type="text" class="search-input" placeholder="Search with AI... Try: 'best practices for React'" id="aiSearchInput">
+              <button class="btn btn-primary search-btn">Search</button>
+            </div>
+            <div class="search-suggestions">
+              <span>Suggestions:</span>
+              <button class="suggestion-chip">Web performance</button>
+              <button class="suggestion-chip">SEO tips</button>
+              <button class="suggestion-chip">UI patterns</button>
+            </div>
+            <div class="search-results" id="searchResults">
+              <p class="search-placeholder">Your AI-powered results will appear here.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section testimonials">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">Testimonials</span>
+        <h2 class="section-title">What Clients Say</h2>
+      </div>
+      <div class="testimonial-slider">
+        <div class="testimonial-track" id="testimonialTrack">
+          <div class="testimonial-card glass" data-aos="fade-up">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Outstanding work. The team delivered a futuristic, fast website that our users love. Highly recommend!"</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">J</div>
+              <div>
+                <strong>Jane Cooper</strong>
+                <span>CEO, TechStart</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card glass" data-aos="fade-up">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"The AI integration and design quality exceeded our expectations. True professionals."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">M</div>
+              <div>
+                <strong>Marcus Chen</strong>
+                <span>CTO, InnovateLab</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card glass" data-aos="fade-up">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Clean code, stunning UI, and on-time delivery. We'll definitely work together again."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">S</div>
+              <div>
+                <strong>Sarah Williams</strong>
+                <span>Founder, DesignCo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-dots" id="testimonialDots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact" id="contact">
+    <div class="container contact-wrap">
+      <div class="contact-info" data-aos="fade-right">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-desc">Have a project in mind? We'd love to hear from you.</p>
+        <ul class="contact-details">
+          <li>
+            <span class="contact-label">Email</span>
+            <a href="mailto:hello@nexus.dev">hello@nexus.dev</a>
+          </li>
+          <li>
+            <span class="contact-label">Location</span>
+            <span>San Francisco, CA</span>
+          </li>
+        </ul>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+          <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+          <a href="#" class="social-link" aria-label="GitHub">⌘</a>
+        </div>
+      </div>
+      <form class="contact-form glass" id="contactForm" data-aos="fade-left">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required placeholder="Your name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="your@email.com">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required placeholder="Your message..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="#home" class="nav-logo">
+          <span class="logo-text">Nexus</span>
+          <span class="logo-dot"></span>
+        </a>
+        <p class="footer-copy">© 2025 Nexus. Build your future with modern web design.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
